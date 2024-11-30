@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vietnam War History</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="./assets/css/welcome-modal.css" />
+  </head>
+  <body class="light-mode">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/images/index/logo.png" alt="Logo" width="100" />
+        </a>
+
+        <button
+          class="navbar-toggler btn-nav"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="french-war.html"
+                >War Against the French</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="american-war.html"
+                >War Against the Americans</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="battles.html">Famous Battles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="figures.html">Key Historical Figures</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
+          </ul>
+          <button id="darkModeToggle" class="btn-nav">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./assets/images/index/carousel-1.jpg"
+            class="d-block w-100"
+            alt="Slide 1"
+          />
+          <div class="carousel-caption text-start">
+            <h1 class="carousel-title text-start">
+              "Honoring the Spirit of Resistance: Vietnam's Fight for Freedom"
+            </h1>
+            <button class="btn btn-secondary read-more">
+              <a href="#about">Read More</a>
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/images/index/carousel-2.jpg"
+            class="d-block w-100"
+            alt="Slide 2"
+          />
+          <div class="carousel-caption text-start">
+            <h1 class="carousel-title text-start">
+              "Honoring the Spirit of Resistance: Vietnam's Fight for Freedom"
+            </h1>
+            <button class="btn btn-secondary read-more">
+              <a href="#about">Read More</a>
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/images/index/carousel-3.jpg"
+            class="d-block w-100"
+            alt="Slide 3"
+          />
+          <div class="carousel-caption text-start">
+            <h1 class="carousel-title text-start">
+              "Honoring the Spirit of Resistance: Vietnam's Fight for Freedom"
+            </h1>
+            <button class="btn btn-secondary read-more">
+              <a href="#about">Read More</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2>About</h2>
+            <blockquote class="quote">
+              "Honoring the Spirit of Resistance: Vietnam's Fight for Freedom"
+            </blockquote>
+            <p class="about-text">
+              Welcome to our website dedicated to Vietnam's struggles against
+              French and American imperialism. Our mission is to educate and
+              inspire a deeper understanding of these pivotal events that shaped
+              our nation. By exploring the resilience of the Vietnamese people,
+              we highlight the importance of historical awareness in fostering
+              national pride and cultural identity. Understanding this history
+              is essential for honoring the sacrifices made and ensuring future
+              generations appreciate the legacy of those who fought for
+              independence. Join us in discovering the powerful stories that
+              define Vietnam's enduring spirit.
+            </p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <button class="btn btn-secondary read-more">
+              <a href="#cards">Read More</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="cards" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img
+                src="./assets/images/index/cards/french-war.jpg"
+                class="card-img-top"
+                alt="War Against the French"
+              />
+              <div class="card-body">
+                <h5 class="card-title">War Against the French</h5>
+                <a href="french-war.html" class="btn btn-secondary"
+                  >More Detail</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img
+                src="./assets/images/index/cards/american-war.jpg"
+                class="card-img-top"
+                alt="War Against the Americans"
+              />
+              <div class="card-body">
+                <h5 class="card-title">War Against the Americans</h5>
+                <a href="american-war.html" class="btn btn-secondary"
+                  >More Detail</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img
+                src="./assets/images/index/cards/battles.jpg"
+                class="card-img-top"
+                alt="Famous Battles"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Famous Battles</h5>
+                <a href="battles.html" class="btn btn-secondary">More Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img
+                src="./assets/images/index/cards/figures.jpg"
+                class="card-img-top"
+                alt="Key Historical Figures"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Key Historical Figures</h5>
+                <a href="figures.html" class="btn btn-secondary">More Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="./assets/images/index/logo.png" alt="Logo" width="200" />
+          </div>
+          <div class="col-md-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="french-war.html">War Against the French</a></li>
+              <li><a href="american-war.html">War Against the Americans</a></li>
+              <li><a href="battles.html">Famous Battles</a></li>
+              <li><a href="figures.html">Key Historical Figures</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-phone"></i> +84 123 456 789</li>
+              <li><i class="fas fa-envelope"></i> info@example.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> Hanoi, Vietnam</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Team Members</h5>
+            <ul class="list-unstyled">
+              <li>Nguyen Minh Lam _2101060057</li>
+              <li>Tran Thi Tram Anh _2101060017</li>
+              <li>Nguyen Thi Hien Nhi _2201060052</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Welcome Modal -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Welcome to Resilient Vietnam!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Welcome to our journey through Vietnam's history of resilience and
+              determination. Explore the remarkable stories of courage,
+              sacrifice, and triumph that shaped our nation.
+            </p>
+            <div class="text-center">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/welcome-modal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+/* Figures Carousel */
+#figuresCarousel {
+  height: calc(100vh - 76px);
+  background-color: var(--light-bg-main);
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.figure-content {
+  height: 100%;
+  padding: 2rem 0;
+}
+
+/* Figure Text Styles */
+.figure-text {
+  padding: 2rem;
+}
+
+.figure-text h2 {
+  color: var(--light-bg-nav);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.figure-text p {
+  color: var(--light-bg-nav);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.figure-text .quote {
+  font-size: 1.5rem;
+  color: var(--light-bg-nav);
+  font-style: italic;
+  border-left: 4px solid var(--light-btn);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* Figure Image Styles */
+.figure-image {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.figure-image img {
+  max-height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0.8;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--light-bg-nav);
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+/* Dark Mode Styles */
+body.dark-mode #figuresCarousel {
+  background-color: var(--dark-bg-main);
+}
+
+body.dark-mode .figure-text h2,
+body.dark-mode .figure-text p,
+body.dark-mode .figure-text .quote {
+  color: var(--dark-text-nav);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .figure-text h2 {
+    font-size: 2rem;
+  }
+
+  .figure-text p {
+    font-size: 1rem;
+  }
+
+  .figure-text .quote {
+    font-size: 1.2rem;
+  }
+
+  .figure-image img {
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .figure-content {
+    flex-direction: column;
+  }
+
+  .figure-text {
+    text-align: center;
+  }
+
+  .figure-image {
+    margin-top: 2rem;
+  }
+}

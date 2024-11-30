@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>War Against the American - Vietnam War History</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="./assets/css/american-war.css" />
+  </head>
+  <body class="light-mode">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/images/index/logo.png" alt="Logo" width="100" />
+        </a>
+
+        <button
+          class="navbar-toggler btn-nav"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="french-war.html"
+                >War Against the French</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="american-war.html"
+                >War Against the Americans</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="battles.html">Famous Battles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="figures.html">Key Historical Figures</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
+          </ul>
+          <button id="darkModeToggle" class="btn-nav">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner Section -->
+    <section class="banner">
+      <div class="container">
+        <div class="banner-content text-center">
+          <h1>War against the American</h1>
+          <h2>1954 - 1975</h2>
+          <button class="btn btn-secondary" onclick="scrollToIntro()">
+            Continue
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="intro" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2>Vietnam Resistance Against American Intervention</h2>
+            <h3>An overview of the Vietnam War and its key events</h3>
+            <p class="intro-text">
+              Following the division of Vietnam in 1954, the struggle for
+              reunification became inevitable. The involvement of the United
+              States led to a new and prolonged war. From the formation of the
+              National Liberation Front to the Tet Offensive, the war against
+              the United States was marked by intense conflict and political
+              maneuvers, ultimately resulting in Vietnam's reunification in
+              1975.
+            </p>
+            <blockquote class="quote">
+              "We will fight until there is not a single American soldier left
+              in Vietnam."
+              <footer>- Le Duan</footer>
+            </blockquote>
+          </div>
+          <div class="col-lg-4">
+            <img
+              src="./assets/images/american-war/intro.jpg"
+              alt="Vietnam War"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Tet Offensive Card -->
+          <div class="col-md-4 mb-4">
+            <div class="timeline-card" onclick="scrollToEvent('tet')">
+              <img
+                src="./assets/images/american-war/tet.jpg"
+                alt="Tet Offensive"
+                class="timeline-img"
+                style="border: 5px solid var(--light-bg-nav)"
+              />
+              <h4 class="event-title">Tet Mau Than Offensive</h4>
+              <p class="event-time">January 30, 1968</p>
+            </div>
+          </div>
+          <!-- Paris Accords Card -->
+          <div class="col-md-4 mb-4">
+            <div class="timeline-card" onclick="scrollToEvent('paris')">
+              <img
+                src="./assets/images/american-war/paris.jpg"
+                alt="Paris Accords"
+                class="timeline-img"
+                style="border: 5px solid var(--light-bg-nav)"
+              />
+              <h4 class="event-title">Paris Accords</h4>
+              <p class="event-time">January 27, 1973</p>
+            </div>
+          </div>
+          <!-- Fall of Saigon Card -->
+          <div class="col-md-4 mb-4">
+            <div class="timeline-card" onclick="scrollToEvent('fall-saigon')">
+              <img
+                src="./assets/images/american-war/fall-saigon.jpg"
+                alt="Fall of Saigon"
+                class="timeline-img"
+                style="border: 5px solid var(--light-bg-nav)"
+              />
+              <h4 class="event-title">Fall of Saigon</h4>
+              <p class="event-time">April 30, 1975</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Sections -->
+    <section id="tet" class="event-section py-5">
+      <div class="container">
+        <h2>Tet Mau Than Offensive</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/american-war/tet-detail.jpg"
+              alt="Tet Offensive"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-lg-6">
+            <p>
+              The Tet Offensive of 1968 was a major military campaign during the
+              Vietnam War, launched by North Vietnamese and Viet Cong forces
+              against South Vietnam and its allies, including the United States.
+              Beginning on January 30, 1968, during the Lunar New Year (Tet)
+              holiday, it consisted of coordinated attacks on over 100 cities
+              and military bases. Although it was a tactical defeat for the
+              North due to heavy casualties, the offensive shocked the United
+              States and significantly weakened public support for the war,
+              marking a turning point in the conflict.
+            </p>
+            <blockquote class="quote">
+              "The Tet Offensive showed the American people that the war in
+              Vietnam was far from over."
+              <footer>- General Vo Nguyen Giap</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Paris Accords Event Section -->
+    <section id="paris" class="event-section py-5">
+      <div class="container">
+        <h2>Paris Accords</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p>
+              The Paris Peace Accords, signed on January 27, 1973, aimed to
+              establish peace and end the Vietnam War. The agreement involved
+              the United States, North Vietnam, South Vietnam, and the Viet
+              Cong, calling for a ceasefire, the withdrawal of U.S. troops, and
+              the release of prisoners of war. While it temporarily reduced
+              direct U.S. involvement, the accords failed to resolve underlying
+              tensions, leading to the eventual fall of Saigon and the
+              reunification of Vietnam under communist control in 1975.
+            </p>
+            <blockquote class="quote">
+              "The Accords marked a turning point, but they did not end the
+              war."
+              <footer>- Former U.S. Secretary of State Henry Kissinger</footer>
+            </blockquote>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/american-war/paris-accords.jpg"
+              alt="Paris Accords"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fall of Saigon Event Section -->
+    <section id="fall-saigon" class="event-section py-5">
+      <div class="container">
+        <h2>Fall of Saigon</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/american-war/fall-saigon2.jpg"
+              alt="Fall of Saigon 2"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-lg-6">
+            <p>
+              The Fall of Saigon on April 30, 1975, marked the end of the
+              Vietnam War as North Vietnamese forces captured Saigon, the
+              capital of South Vietnam. The event followed the successful Ho Chi
+              Minh Campaign, which overwhelmed South Vietnamese defenses.
+              Saigon’s fall led to the collapse of the South Vietnamese
+              government and the reunification of Vietnam under communist rule.
+              It also symbolized a significant defeat for the United States,
+              which had supported South Vietnam throughout the war. Images of
+              helicopters evacuating U.S. personnel and refugees became iconic
+              representations of the war's end.
+            </p>
+            <blockquote class="quote">
+              "Sài Gòn đã hoàn toàn giải phóng." (Saigon has been completely
+              liberated.)
+              <footer>- North Vietnamese Forces</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="row align-items-center mt-2">
+          <div class="col-12 d-flex justify-content-center">
+            <img
+              src="./assets/images/american-war/fall-saigon1.jpg"
+              alt="Fall of Saigon 1"
+              class="img-fluid rounded mb-4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="py-5">
+      <div class="container">
+        <h2>Legacy of the War against the American</h2>
+        <p>
+          The war against the United States, which spanned two decades, had a
+          profound impact on Vietnam and the world. It led to the reunification
+          of Vietnam under communist rule, ended U.S. military involvement in
+          Southeast Asia, and marked a significant chapter in the global
+          anti-imperialist struggle. While the war caused immense suffering and
+          loss, it also demonstrated the resilience of the Vietnamese people and
+          their determination to regain their independence. The legacy of the
+          war is remembered both in Vietnam and abroad, shaping the future of
+          both nations.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="./assets/images/index/logo.png" alt="Logo" width="200" />
+          </div>
+          <div class="col-md-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="french-war.html">War Against the French</a></li>
+              <li><a href="american-war.html">War Against the Americans</a></li>
+              <li><a href="battles.html">Famous Battles</a></li>
+              <li><a href="figures.html">Key Historical Figures</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-phone"></i> +84 123 456 789</li>
+              <li><i class="fas fa-envelope"></i> info@example.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> Hanoi, Vietnam</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Team Members</h5>
+            <ul class="list-unstyled">
+              <li>Nguyen Minh Lam _2101060057</li>
+              <li>Tran Thi Tram Anh _2101060017</li>
+              <li>Nguyen Thi Hien Nhi _2201060052</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/american-war.js"></script>
+  </body>
+</html>

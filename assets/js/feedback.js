@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const feedbackForm = document.querySelector(".feedback-form");
 
   feedbackForm.addEventListener("submit", function (e) {
-    e.preventDefault(); // Ngăn form submit mặc định
+    e.preventDefault();
 
     document.getElementById("feedback-subtitle").innerText =
       "Thank you for your feedback!";
@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
         "We value your thoughts and suggestions to improve our content and user experience!";
     }, 3000);
 
-    // Reset form
     this.reset();
   });
 });

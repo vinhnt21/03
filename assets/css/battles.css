@@ -1,11 +1,10 @@
-/* Title Section */
 .title-section h1 {
   color: var(--light-bg-nav);
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
-/* Battle Cards */
+
 .battle-card {
   border-top-right-radius: 50px;
 
@@ -14,8 +13,8 @@
   height: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-  display: flex; /* Thêm display flex */
-  flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+  display: flex;
+  flex-direction: column;
 }
 
 .battle-card:hover {
@@ -26,7 +25,7 @@
   position: relative;
   height: 200px;
   overflow: hidden;
-  flex-shrink: 0; /* Không co lại */
+  flex-shrink: 0;
 }
 
 .card-image img {
@@ -38,14 +37,14 @@
 
 .card-content {
   padding: 1.5rem;
-  display: flex; /* Thêm display flex */
-  flex-direction: column; /* Xếp các phần tử theo chiều dọc */
-  flex-grow: 1; /* Cho phép nội dung mở rộng */
-  justify-content: space-between; /* Đẩy nút xuống dưới */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .card-content-text {
-  flex-grow: 1; /* Cho phép phần text mở rộng */
+  flex-grow: 1;
 }
 
 .battle-time {
@@ -69,9 +68,9 @@
   display: block;
   margin: 0 auto;
   width: fit-content;
-  margin-top: auto; /* Đẩy nút xuống dưới */
+  margin-top: auto;
 }
-/* Modal Styles */
+
 .modal-content {
   background-color: var(--light-bg-main);
 }
@@ -84,7 +83,6 @@
   color: var(--light-bg-nav);
 }
 
-/* Dark Mode Styles */
 body.dark-mode .title-section h1 {
   color: var(--dark-text-nav);
 }
@@ -107,7 +105,6 @@ body.dark-mode .modal-title {
   color: var(--dark-text-nav);
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .title-section h1 {
     font-size: 2.5rem;
@@ -118,13 +115,11 @@ body.dark-mode .modal-title {
   }
 }
 
-/* Smooth Carousel Transitions */
 .carousel-item {
   height: 100%;
   transition: transform 0.6s ease-in-out;
 }
 
-/* Add fade effect */
 .carousel-fade .carousel-item {
   opacity: 0;
   transition-duration: 0.6s;
@@ -151,7 +146,6 @@ body.dark-mode .modal-title {
   transform: translate3d(0, 0, 0);
 }
 
-/* Smooth image transitions */
 .figure-image img {
   max-height: 80vh;
   width: 100%;
@@ -161,7 +155,6 @@ body.dark-mode .modal-title {
   transition: all 0.6s ease-in-out;
 }
 
-/* Smooth text transitions */
 .figure-text {
   padding: 2rem;
   opacity: 1;

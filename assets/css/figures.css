@@ -1,4 +1,3 @@
-/* figures.css */
 #figuresCarousel {
   height: calc(100vh - 76px);
   background-color: var(--light-bg-main);
@@ -16,7 +15,6 @@
   align-items: center;
 }
 
-/* Figure Text Styles */
 .figure-text {
   padding: 2rem;
   animation: fadeIn 0.5s ease-in;
@@ -48,7 +46,6 @@
   border-radius: 0 10px 10px 0;
 }
 
-/* Figure Image Styles */
 .figure-image {
   height: 100%;
   display: flex;
@@ -61,7 +58,7 @@
 .figure-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Thay đổi từ cover sang contain */
+  object-fit: contain;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
@@ -71,7 +68,6 @@
   transform: scale(1.02);
 }
 
-/* Carousel Controls */
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
@@ -92,7 +88,6 @@
   transition: background-color 0.3s;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -115,7 +110,6 @@
   }
 }
 
-/* Responsive Styles */
 @media (max-width: 1200px) {
   .figure-text h2 {
     font-size: 2.2rem;
@@ -153,7 +147,7 @@
   }
 
   .figure-image {
-    height: 60vh; /* Điều chỉnh chiều cao container */
+    height: 60vh;
   }
 }
 
@@ -172,7 +166,7 @@
   }
 
   .figure-image {
-    height: 40vh; /* Điều chỉnh chiều cao container */
+    height: 40vh;
     margin: 1rem 0;
   }
 
@@ -197,11 +191,10 @@
   }
 
   .figure-image {
-    height: 35vh; /* Điều chỉnh chiều cao container */
+    height: 35vh;
   }
 }
 
-/* Dark Mode Styles */
 body.dark-mode #figuresCarousel {
   background-color: var(--dark-bg-main);
 }
@@ -220,7 +213,6 @@ body.dark-mode .carousel-control-next-icon {
   background-color: var(--dark-btn);
 }
 
-/* Touch Device Optimizations */
 @media (hover: none) {
   .figure-image img:hover {
     transform: none;

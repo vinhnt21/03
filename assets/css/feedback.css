@@ -1,8 +1,5 @@
-/* Feedback Section */
 .feedback-section {
-  min-height: calc(
-    100vh - 76px - 300px
-  ); /* Subtract navbar and approximate footer height */
+  min-height: calc(100vh - 76px - 300px);
   display: flex;
   align-items: center;
   padding: 4rem 0;
@@ -15,7 +12,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Title Styles */
 .feedback-container h1 {
   color: var(--light-text-nav);
   text-align: center;
@@ -30,7 +26,6 @@
   font-size: 1.1rem;
 }
 
-/* Form Styles */
 .feedback-form .form-control {
   background-color: var(--light-text-nav);
   border: none;
@@ -48,7 +43,6 @@
   color: #666;
 }
 
-/* Button Styles */
 .feedback-form .btn-secondary {
   padding: 0.8rem 3rem;
   font-size: 1.1rem;
@@ -63,7 +57,6 @@
   transform: translateY(-2px);
 }
 
-/* Dark Mode Styles */
 body.dark-mode .feedback-container {
   background-color: var(--dark-btn);
 }
@@ -83,7 +76,6 @@ body.dark-mode .feedback-form .btn-secondary {
   border-color: var(--dark-bg-nav);
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .feedback-section {
     padding: 2rem 0;

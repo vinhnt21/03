@@ -1,4 +1,3 @@
-/* Banner Section */
 .banner {
   height: calc(100vh - 76px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -20,7 +19,6 @@
   margin-bottom: 2rem;
 }
 
-/* Timeline Cards */
 .timeline-card {
   color: var(--light-bg-nav);
   overflow: hidden;
@@ -49,7 +47,6 @@
   margin: 0;
 }
 
-/* Event Sections */
 .event-section {
   background-color: var(--light-bg-main);
 }
@@ -70,7 +67,6 @@
   font-weight: bold;
 }
 
-/* Dark Mode Styles */
 body.dark-mode .timeline-card {
   background-color: var(--dark-bg-nav);
   border-color: var(--dark-btn);
@@ -94,7 +90,6 @@ body.dark-mode .event-section:nth-child(even) {
   background-color: var(--dark-bg-nav);
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .banner h1 {
     font-size: 2.5rem;

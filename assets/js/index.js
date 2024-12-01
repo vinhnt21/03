@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const darkModeToggle = document.getElementById("darkModeToggle");
   const body = document.body;
 
-  // Check local storage for dark mode preference
   if (localStorage.getItem("darkMode") === "enabled") {
     body.classList.add("dark-mode");
     const icon = darkModeToggle.querySelector("i");
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     icon.classList.toggle("fa-moon");
     icon.classList.toggle("fa-sun");
 
-    // Save the user's preference in local storage
     if (body.classList.contains("dark-mode")) {
       localStorage.setItem("darkMode", "enabled");
     } else {

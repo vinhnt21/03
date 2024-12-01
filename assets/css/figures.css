@@ -1,7 +1,8 @@
-/* Figures Carousel */
+/* figures.css */
 #figuresCarousel {
   height: calc(100vh - 76px);
   background-color: var(--light-bg-main);
+  overflow: hidden;
 }
 
 .carousel-item {
@@ -11,23 +12,28 @@
 .figure-content {
   height: 100%;
   padding: 2rem 0;
+  display: flex;
+  align-items: center;
 }
 
 /* Figure Text Styles */
 .figure-text {
   padding: 2rem;
+  animation: fadeIn 0.5s ease-in;
 }
 
 .figure-text h2 {
   color: var(--light-bg-nav);
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
+  font-weight: bold;
 }
 
 .figure-text p {
   color: var(--light-bg-nav);
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  line-height: 1.8;
 }
 
 .figure-text .quote {
@@ -37,6 +43,9 @@
   border-left: 4px solid var(--light-btn);
   padding-left: 1.5rem;
   margin: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.5rem;
+  border-radius: 0 10px 10px 0;
 }
 
 /* Figure Image Styles */
@@ -45,14 +54,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: slideIn 0.5s ease-out;
+  padding: 1rem;
 }
 
 .figure-image img {
-  max-height: 80vh;
   width: 100%;
-  object-fit: cover;
-  border-top-right-radius: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  object-fit: contain; /* Thay đổi từ cover sang contain */
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.figure-image img:hover {
+  transform: scale(1.02);
 }
 
 /* Carousel Controls */
@@ -60,6 +76,12 @@
 .carousel-control-next {
   width: 5%;
   opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
 }
 
 .carousel-control-prev-icon,
@@ -67,6 +89,116 @@
   background-color: var(--light-bg-nav);
   border-radius: 50%;
   padding: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .figure-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .figure-text p {
+    font-size: 1.1rem;
+  }
+
+  .figure-text .quote {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #figuresCarousel {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .figure-content {
+    padding: 1rem 0;
+  }
+
+  .figure-text {
+    padding: 1.5rem;
+  }
+
+  .figure-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .figure-text p {
+    font-size: 1rem;
+  }
+
+  .figure-image {
+    height: 60vh; /* Điều chỉnh chiều cao container */
+  }
+}
+
+@media (max-width: 768px) {
+  .figure-content {
+    flex-direction: column-reverse;
+  }
+
+  .figure-text {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .figure-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .figure-image {
+    height: 40vh; /* Điều chỉnh chiều cao container */
+    margin: 1rem 0;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .figure-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .figure-text p {
+    font-size: 0.9rem;
+  }
+
+  .figure-text .quote {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .figure-image {
+    height: 35vh; /* Điều chỉnh chiều cao container */
+  }
 }
 
 /* Dark Mode Styles */
@@ -75,40 +207,22 @@ body.dark-mode #figuresCarousel {
 }
 
 body.dark-mode .figure-text h2,
-body.dark-mode .figure-text p,
-body.dark-mode .figure-text .quote {
+body.dark-mode .figure-text p {
   color: var(--dark-text-nav);
 }
 
-/* Responsive Styles */
-@media (max-width: 992px) {
-  .figure-text h2 {
-    font-size: 2rem;
-  }
-
-  .figure-text p {
-    font-size: 1rem;
-  }
-
-  .figure-text .quote {
-    font-size: 1.2rem;
-  }
-
-  .figure-image img {
-    max-height: 50vh;
-  }
+body.dark-mode .figure-text .quote {
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
-@media (max-width: 768px) {
-  .figure-content {
-    flex-direction: column;
-  }
+body.dark-mode .carousel-control-prev-icon,
+body.dark-mode .carousel-control-next-icon {
+  background-color: var(--dark-btn);
+}
 
-  .figure-text {
-    text-align: center;
-  }
-
-  .figure-image {
-    margin-top: 2rem;
+/* Touch Device Optimizations */
+@media (hover: none) {
+  .figure-image img:hover {
+    transform: none;
   }
 }

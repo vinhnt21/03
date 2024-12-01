@@ -57,3 +57,7 @@ body.dark-mode .event-section:nth-child(even) {
 body.dark-mode .event-section img {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
+
+body.dark-mode .figure-text .quote {
+  color: var(--dark-text-nav);
+}

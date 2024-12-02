@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("Feedback form is ready!");
-
   const feedbackForm = document.querySelector(".feedback-form");
 
   feedbackForm.addEventListener("submit", function (e) {

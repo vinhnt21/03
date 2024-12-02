@@ -1,0 +1,85 @@
+/* assets/css/quiz.css */
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--light-bg-nav);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--light-text-nav);
+}
+
+.quiz-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.quiz-status {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.question-container {
+  margin-bottom: 2rem;
+}
+
+.options-container {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.option {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: var(--light-text-nav);
+}
+
+.option:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.option.selected {
+  border-color: var(--light-btn);
+  background-color: rgba(163, 165, 103, 0.3);
+}
+
+.option.correct {
+  background-color: rgba(75, 181, 67, 0.3);
+  border-color: #4bb543;
+}
+
+.option.incorrect {
+  background-color: rgba(255, 0, 0, 0.3);
+  border-color: #ff0000;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#results {
+  text-align: center;
+}
+
+/* Dark mode styles */
+body.dark-mode .quiz-container {
+  background-color: var(--dark-bg-nav);
+  color: var(--dark-text-nav);
+}
+
+body.dark-mode .option {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .option:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
